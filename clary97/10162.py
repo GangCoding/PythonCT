@@ -1,6 +1,6 @@
 money = int(input())
 
-money_types = [300, 60, 10]
+money_types = [300, 60, 10]  # 5분은 300초, 1분은 60초
 counts = []
 for mon in money_types :
     counts.append(money // mon)
