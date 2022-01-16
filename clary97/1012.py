@@ -1,4 +1,6 @@
 from sys import stdin
+import sys
+sys.setrecursionlimit(10**9)
 
 t = int(input())
 result_list = []
