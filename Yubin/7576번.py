@@ -32,8 +32,10 @@ check = False
 result = -2
 for i in graph:
     for j in i:
-        if j == 0: # 0이 존재하면
+      # 다 찾아봤는데 토마토를 익히지 못했다면
+        if j == 0:
             check = True # check = True
+        # 다 익힌 거면 최댓값이 정답이도록
         result = max(result, j)
 
 if check == True: # 못 익을 때
