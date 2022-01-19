@@ -1,0 +1,13 @@
+N = int(input())
+
+dict = {}
+
+for i in range(N):
+    a, b = input().split()
+    b = int(b)
+    dict[b] = a
+
+dict = sorted(dict.items())
+
+for i in range(len(dict)):
+    print(dict[i][1], end=' ')
