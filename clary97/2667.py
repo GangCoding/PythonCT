@@ -4,7 +4,7 @@ graph = []
 for i in range(n) :
     graph.append(list(map(int, input())))
     
-def dfs(x,y) :
+def dfs(x,y) : 
     global house
     if x <= -1 or x >=n or y <= -1 or y >= n :
         return False
@@ -20,8 +20,8 @@ def dfs(x,y) :
     return False
 
 count = 0
-danji = []
-house = 0
+danji = []  ## 단지
+house = 0   ## 집 개수
 for i in range(n) :
     for j in range(n) :
         if dfs(i,j) == True :
