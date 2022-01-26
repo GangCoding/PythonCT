@@ -3,7 +3,7 @@ N, M = list(map(int, input().split()))
 rice_cake = list(map(int, input().split()))
 
 start = 0
-end = max(rice_cake)
+end = max(rice_cake) # end는 max(rice_cake)
 
 while start <= end:
   total = 0
@@ -18,5 +18,5 @@ while start <= end:
     start = mid + 1
 print(result)
 
-# 회의실 배정하는 문제랑 거의 비슷한 맥락
+# 백준의 예산 문제랑 거의 비슷한 맥락
 # 대신, i - mid를 해야함, 이진탐색 문제
