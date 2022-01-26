@@ -8,6 +8,7 @@ end = max(rice_cake) # end는 max(rice_cake)
 while start <= end:
   total = 0
   mid = (start+end) // 2
+  
   for i in rice_cake:
     if i > mid:
       total += i - mid
