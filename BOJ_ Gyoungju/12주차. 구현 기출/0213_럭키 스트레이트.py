@@ -5,7 +5,8 @@ Created on Sun Feb 13 19:36:05 2022
 @author: qwuni
 """
 
-n = input()  # str
+n = int(input())  # str
+n = str(n)
 
 x = len(n)//2  # 점수를 반으로 나눠줌    
 
