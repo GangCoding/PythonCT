@@ -1,15 +1,16 @@
-N = input()
+N = int(input())
 
 a = []
 
-for i in N:
+for i in str(N):
     a.append(i)
 
 half = len(a)//2
 right_list = list(map(int, a[half:]))
 left_list = list(map(int, a[:half]))
 
-sum1, sum2 = 0
+sum1 = 0
+sum2 = 0
 
 for i in right_list:
     sum1 += i
