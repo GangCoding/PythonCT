@@ -12,7 +12,7 @@ string = input()
 numbers = re.findall('\d', string)  # 숫자분리
 alphas = re.findall('[A-Z]', string)  # 문자분리
 
-alphas_sort =sorted(alphas, reverse=False)   # 알파벳 오름차수 ㄴ정렬
+alphas_sort =sorted(alphas, reverse=False)   # 알파벳 오름차순 정렬
 
 numbers_int=list(map(int, numbers))  # 숫자 int로 바꾸기
 
